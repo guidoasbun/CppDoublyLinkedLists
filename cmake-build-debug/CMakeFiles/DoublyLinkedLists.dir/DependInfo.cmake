@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/DoublyList.cpp" "/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/CMakeFiles/DoublyLinkedLists.dir/DoublyList.cpp.o"
   "/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/main.cpp" "/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/CMakeFiles/DoublyLinkedLists.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

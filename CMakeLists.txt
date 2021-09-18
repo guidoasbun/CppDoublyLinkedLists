@@ -3,4 +3,4 @@ project(DoublyLinkedLists)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DoublyLinkedLists main.cpp)
+add_executable(DoublyLinkedLists main.cpp DoublyList.cpp DoublyList.h)

@@ -129,6 +129,30 @@ DoublyLinkedLists/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedLists.dir/build.make CMakeFiles/DoublyLinkedLists.dir/build
 .PHONY : DoublyLinkedLists/fast
 
+DoublyList.o: DoublyList.cpp.o
+.PHONY : DoublyList.o
+
+# target to build an object file
+DoublyList.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedLists.dir/build.make CMakeFiles/DoublyLinkedLists.dir/DoublyList.cpp.o
+.PHONY : DoublyList.cpp.o
+
+DoublyList.i: DoublyList.cpp.i
+.PHONY : DoublyList.i
+
+# target to preprocess a source file
+DoublyList.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedLists.dir/build.make CMakeFiles/DoublyLinkedLists.dir/DoublyList.cpp.i
+.PHONY : DoublyList.cpp.i
+
+DoublyList.s: DoublyList.cpp.s
+.PHONY : DoublyList.s
+
+# target to generate assembly for a file
+DoublyList.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublyLinkedLists.dir/build.make CMakeFiles/DoublyLinkedLists.dir/DoublyList.cpp.s
+.PHONY : DoublyList.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DoublyLinkedLists"
+	@echo "... DoublyList.o"
+	@echo "... DoublyList.i"
+	@echo "... DoublyList.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/DoublyList.cpp">
+			<Option target="DoublyLinkedLists"/>
+		</Unit>
+		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/DoublyList.h">
+			<Option target="DoublyLinkedLists"/>
+		</Unit>
 		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/main.cpp">
 			<Option target="DoublyLinkedLists"/>
 		</Unit>
