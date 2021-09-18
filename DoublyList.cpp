@@ -72,7 +72,23 @@ int DoublyList::back() const
     return last->getData();
 }
 
+void DoublyList::insertBack(int newData)
+{
+    if (first == nullptr)
+    {
+        first = new Node(newData, nullptr, nullptr);
+        last = first;
+    }
+    else
+    {
+        last->setNext(new Node(newData, last, nullptr));
+        last = last->getNext();
+    }
+    ++count;
+}
+
 DoublyList::~DoublyList()
 {
     clearList();
 }
+

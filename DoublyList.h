@@ -40,6 +40,7 @@ public:
     void printReverse() const;
     int front() const;
     int back() const;
+    void insertBack(int newData);
 
     void clearList();
     // Destructor

@@ -17,6 +17,9 @@ int main()
     cout << "front: " << myList.front() << endl;
     cout << "back: " << myList.back() << endl;
 
+    myList.insertBack(10);
+    cout << "new back: " << myList.back() << endl;
+
 
     cout << "List print forward: ";
     myList.printForward();
