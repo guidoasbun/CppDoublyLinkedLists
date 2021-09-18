@@ -8,18 +8,24 @@ int main()
     DoublyList myList;
 
     myList.insertFront(5);
-    myList.insertFront(4);
+    myList.insertFront(9);
     myList.insertFront(3);
-    myList.insertFront(2);
-    myList.insertFront(1);
+    myList.insertFront(5);
+    myList.insertFront(8);
 
 
     cout << "front: " << myList.front() << endl;
+    cout << "back: " << myList.back() << endl;
+
+
+    cout << "List print forward: ";
+    myList.printForward();
+    cout << endl;
+    cout << "List print reverse: ";
+    myList.printReverse();
+    cout << endl;
 
     myList.clearList();
-
-
-
 
     return 0;
 }

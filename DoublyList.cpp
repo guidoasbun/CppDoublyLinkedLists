@@ -67,6 +67,11 @@ int DoublyList::front() const
     return first->getData();
 }
 
+int DoublyList::back() const
+{
+    return last->getData();
+}
+
 DoublyList::~DoublyList()
 {
     clearList();

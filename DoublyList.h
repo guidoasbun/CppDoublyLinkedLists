@@ -38,8 +38,8 @@ public:
 
     void printForward() const;
     void printReverse() const;
-
     int front() const;
+    int back() const;
 
     void clearList();
     // Destructor
