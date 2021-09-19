@@ -112,24 +112,28 @@ void DoublyList::moveToList(DoublyList &toList)
 void DoublyList::deleteElement(int valueToDelete)
 {
     // Case 1: List is empty
-    if (first == nullptr)
-        cerr << "Cannot delete from an empty list." << endl;
+    if (first == nullptr) // OR: if (count == 0)
+    {
+    // Use cerr, rather than cout (why?)
+        cerr << "Cannot delete from an empty list.\n";
+    }
     else
     {
         // Set a Boolean value to keep track of
-        // weather the item is found or not
+        // whether the item is found or not.
         bool found = false;
-
-        // Case 2: Node to be deleted is the first node
+        // Case 2: Node to be delete is the first node.
         if (first->getData() == valueToDelete)
         {
+            // If there is only one node...
             if (first == last)
+            // OR: if (count == 1)
             {
                 delete first;
                 first = last = nullptr;
             }
-            // If there is more than 1 node
             else
+            // If there is more than one node...
             {
                 first = first->getNext();
                 delete first->getPrev();
@@ -138,41 +142,39 @@ void DoublyList::deleteElement(int valueToDelete)
             found = true;
             --count;
         }
-        // Case 3: Node to delete is the last Node
+        // Case 3: Node to delete is the last node.
         else if (last->getData() == valueToDelete)
         {
             last = last->getPrev();
-            last = last->getNext();
+            delete last->getNext();
             last->setNext(nullptr);
             found = true;
             --count;
         }
-        // Case 4: Node to delete is somewhere in the list
+        // Case 4: Node to delete is somewhere in the list.
         else
         {
-            // Create a pointer to traverse the list
+            // Create a pointer to traverse the list.
             // Start pointing at the second node, because
-            // you  already know that it is not the first node
+            // you already know that it is not the first node.
             Node* current = first->getNext();
-
             while (!found && current != nullptr)
             // Don't let the WHILE loop continue if
             // the element is found!
             {
-                if (current->getData() == valueToDelete)
+                if (current->getData() == elemToDelete)
                 {
                     // connect previous and next node
                     current->getPrev()->setNext(current->getNext());
-                    current->getNext()->setPrev(current->getNext());
-                    // Note: It would be more efficient to create
-                    // a pointer pointing to the previous node and
-                    // another pointer pointing to the next node
-                    // because we would not have to call too many
-                    // functions, but this is good practice for the exam.
+                    current->getNext()->setPrev(current->getPrev());
+                // NOTE: It would be more efficient to create
+                // a pointer pointing to the previous node and
+                // another pointer pointing to the next node,
+                // because we would not have to call too many
+                // functions, but this is good practice for the exam.
                     delete current;
                     current = nullptr;
-                    // Dont leave a dangling pointer
-
+                // Don't leave a dangling pointer!
                     found = true;
                     --count;
                 }
@@ -180,7 +182,6 @@ void DoublyList::deleteElement(int valueToDelete)
                     current = current->getNext();
             }
         }
-
         if (!found)
             cout << "Element to be deleted is not in the list." << endl;
     }
