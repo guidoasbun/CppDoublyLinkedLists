@@ -7,25 +7,28 @@ int main()
 {
     DoublyList myList;
 
-    myList.insertFront(5);
-    myList.insertFront(9);
-    myList.insertFront(3);
-    myList.insertFront(5);
-    myList.insertFront(8);
-
-
-    cout << "front: " << myList.front() << endl;
-    cout << "back: " << myList.back() << endl;
-
-    myList.insertBack(10);
-    cout << "new back: " << myList.back() << endl;
-
-
-    cout << "List print forward: ";
+    myList.createAList();
+    cout << "Forward Print: ";
     myList.printForward();
     cout << endl;
-    cout << "List print reverse: ";
+
+    cout << "Reverse Print: ";
     myList.printReverse();
+    cout << endl;
+
+    cout << "Count: ";
+    myList.printCount();
+    cout << endl;
+
+    cout << "First Element: " << myList.front() << endl;
+    cout << "Last Element: " << myList.back() << endl;
+
+    cout << "Pointer prev of the first node: ";
+    myList.printPrev();
+    cout << endl;
+
+    cout << "Pointer next of the last node: ";
+    myList.printNext();
     cout << endl;
 
     myList.clearList();

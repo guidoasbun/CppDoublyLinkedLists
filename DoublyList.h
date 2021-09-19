@@ -44,6 +44,13 @@ public:
     void moveToList(DoublyList& toList);
     void deleteElement(int valueToDelete);
 
+    // Lab2
+
+    void printCount() const;
+    void printPrev() const;
+    void printNext() const;
+    void createAList();
+
     void clearList();
     // Destructor
     ~DoublyList();

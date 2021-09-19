@@ -162,7 +162,7 @@ void DoublyList::deleteElement(int valueToDelete)
             // Don't let the WHILE loop continue if
             // the element is found!
             {
-                if (current->getData() == elemToDelete)
+                if (current->getData() == valueToDelete)
                 {
                     // connect previous and next node
                     current->getPrev()->setNext(current->getNext());
@@ -185,6 +185,100 @@ void DoublyList::deleteElement(int valueToDelete)
         if (!found)
             cout << "Element to be deleted is not in the list." << endl;
     }
+}
+
+void DoublyList::printCount() const
+{
+    cout << count;
+}
+
+void DoublyList::printPrev() const
+{
+    cout << first->getPrev();
+}
+
+void DoublyList::printNext() const
+{
+    cout << last->getNext();
+}
+
+void DoublyList::createAList()
+{
+    /*
+    NOTE:
+
+        * RESTRICTION: You can declare ONLY ONE pointer
+          and reuse it throughout the function.
+
+        * Pay CLOSE attention to instructions.
+*/
+
+    /*----------------------------------------------------------------
+    SECTION 1
+    ------------------------------------------------------------------*/
+
+    // Create a dynamic node that stores the value 2 and make
+    // this node to be the first node of the calling object.
+    // List becomes: 2
+    // RESTRICTIONS:
+    //		Use the overloaded constructor.
+    //		Do NOT create a pointer.
+    //		Max: 3 statements
+
+    first = new Node(2, nullptr, nullptr);
+    last = first;
+    ++count;
+
+    /*----------------------------------------------------------------
+	SECTION 2
+	------------------------------------------------------------------*/
+
+    // Create another node that stores the value 3 and
+    // insert this node to the left of the node that is
+    // storing value 2.
+    // List becomes: 3 2
+    // RESTRICTIONS:
+    //		NO loops.
+    //		Do NOT create a pointer.
+    //		Max: 3 statements
+
+    first = new Node(3, nullptr, first);
+    first->getNext()->setPrev(first);
+    ++count;
+
+    /*----------------------------------------------------------------
+	SECTION 3
+	------------------------------------------------------------------*/
+
+    // Create another node that stores the value 4 and
+    // insert this node to the right of the node that is
+    // storing value 3.
+    // List becomes: 3 4 2
+    // RESTRICTIONS:
+    //		NO loops.
+    //		Create a new pointer for this step.
+    //		Pointer identifier: pNode
+    //		Max: 4 statements
+
+    Node* pNode = new Node(4, first, last);
+    first->setNext(pNode);
+    last->setPrev(pNode);
+    ++count;
+
+    /*----------------------------------------------------------------
+	SECTION 4
+	------------------------------------------------------------------*/
+
+    // Delete the first node.
+    // List becomes: 4 2
+    // RESTRICTIONS:
+    //		NO loops.
+    //		Do NOT use pNode.
+    //		Do NOT create a pointer.
+    //		Do NOT create a new node.
+    //		Max: 4 statements
+
+
 }
 
 DoublyList::~DoublyList()
