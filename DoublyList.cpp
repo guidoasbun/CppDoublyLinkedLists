@@ -278,7 +278,136 @@ void DoublyList::createAList()
     //		Do NOT create a new node.
     //		Max: 4 statements
 
+    first = first->getNext();
+    delete first->getPrev();
+    first->setPrev(nullptr);
+    --count;
 
+    /*----------------------------------------------------------------
+	SECTION 5
+	------------------------------------------------------------------*/
+
+    // Insert three nodes at the end of the list storing
+    // 5 6 7 in this order.
+    // List becomes: 4 2 5 6 7
+    // RESTRICTIONS:
+    //		NO loops.
+    //		Do NOT use pNode.
+    //		Do NOT create a pointer.
+    //		Max: 7 statements
+
+    last->setNext(new Node(5, last, nullptr));
+    last = last->getNext();
+
+    last->setNext(new Node(6, last, nullptr));
+    last = last->getNext();
+
+    last->setNext(new Node(7, last, nullptr));
+    last = last->getNext();
+
+    count += 3;
+
+    /*----------------------------------------------------------------
+	SECTION 6
+	------------------------------------------------------------------*/
+
+    // Move last node to second position.
+    // Note that you are NOT replacing values, you are
+    // NOT creating new nodes, and you are NOT moving nodes,
+    // but only rearranging pointers to change the sequence
+    // of the list.
+    // Here, the steps are very important. Carefully think
+    // how you can rearrange the order of nodes around without
+    // losing any nodes and keeping all pointers pointing to the
+    // correct nodes.
+    // RESTRICTIONS:
+    //		NO loops.
+    //		Do NOT use pNode.
+    //		Do NOT create a pointer.
+    //		Do NOT create a new node.
+    //		Max: 6 statements
+    // List becomes: 4 7 2 5 6
+
+
+
+
+
+    /*----------------------------------------------------------------
+	SECTION 7
+	------------------------------------------------------------------*/
+
+    // Move the first node in between the node before last and
+    // last node (the second node will become the first node
+    // in the list, and the first node will become the before-last
+    // node in the list).
+    //	RESTRICTIONS:
+    //		NO loops.
+    //		Do NOT use pNode.
+    //		Do NOT create a pointer.
+    //		Do NOT create a new node.
+    //		Max: 6 statements
+    // List becomes: 7 2 5 4 6
+
+
+
+
+
+    /*----------------------------------------------------------------
+	SECTION 8
+	------------------------------------------------------------------*/
+
+    // WITHOUT moving any nodes, swap around the values to
+    // create an ordered list.
+    // Note that there is no need to move the value 5.
+    // You may declare an int, BUT do NOT use any literals.
+    // List becomes: 2 4 5 6 7
+    //	RESTRICTIONS:
+    //		Create a variable of type int to swap.
+    //		NO loops.
+    //		Do NOT use pNode.
+    //		Do NOT create a pointer.
+    //		Do NOT create a new node.
+    //		Max: 5 statements
+
+
+
+
+
+
+    /*----------------------------------------------------------------
+	SECTION 9
+	------------------------------------------------------------------*/
+
+    // Add two nodes storing 1 and 3 to complete the ordered list.
+    // List becomes: 1 2 3 4 5 6 7
+    //	RESTRICTIONS:
+    //		NO loops.
+    //		Do NOT create a pointer.
+    //		Max: 6 statements
+
+
+
+
+
+
+
+    /*----------------------------------------------------------------
+	SECTION 10
+	------------------------------------------------------------------*/
+
+    /*
+        Go back to check the following:
+
+        Are your statements too long that is necessary to scroll
+        horizontally? If so, break your statements in readable portions.
+
+        You are using shorthand notation:
+            ++count; OR count++; // NOT count = count + 1;
+            count += 2; // NOT count = count + 2;
+
+        Instructions said to create and use ONLY ONE pointer.
+        Go back and check that you did not create more than one pointer.
+    */
 }
 
 DoublyList::~DoublyList()
