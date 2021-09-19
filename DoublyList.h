@@ -41,6 +41,8 @@ public:
     int front() const;
     int back() const;
     void insertBack(int newData);
+    void moveToList(DoublyList& toList);
+
 
     void clearList();
     // Destructor

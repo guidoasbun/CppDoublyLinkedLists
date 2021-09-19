@@ -87,6 +87,28 @@ void DoublyList::insertBack(int newData)
     ++count;
 }
 
+void DoublyList::moveToList(DoublyList &toList)
+{
+    // Assume parameter object is empty.
+    // Do NOT assume calling object is empty.
+    // Do nothing if calling object is empty.
+    if (count != 0)
+    {
+        toList.first = first;
+        toList.last = last;
+        toList.count = count;
+
+    // Detach the calling object from the nodes that
+    // now belong to the parameter object.
+        first = nullptr;
+        last = nullptr;
+        count = 0;
+    // The calling object still exists, but it is empty
+    // as it was when it was created before inserting
+    // any elements.
+    }
+}
+
 DoublyList::~DoublyList()
 {
     clearList();
