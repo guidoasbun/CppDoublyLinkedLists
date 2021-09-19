@@ -42,7 +42,7 @@ public:
     int back() const;
     void insertBack(int newData);
     void moveToList(DoublyList& toList);
-
+    void deleteElement(int valueToDelete);
 
     void clearList();
     // Destructor
