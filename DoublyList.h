@@ -11,12 +11,16 @@
 class Node
 {
 public:
+    // Default constructor
     Node() : data(0), prev(nullptr), next(nullptr) {}
+    // Constructor
     Node(int theData, Node* prevLink, Node* nextLink)
             : data(theData), prev(prevLink), next(nextLink) {}
+    // Gets
     int getData() const { return data; }
     Node* getPrev() const { return prev; }
     Node* getNext() const { return next; }
+    // Sets
     void setData(int theData) { data = theData; }
     void setPrev(Node* prevLink) { prev = prevLink; }
     void setNext(Node* nextLink) { next = nextLink; }
@@ -45,7 +49,6 @@ public:
     void deleteElement(int valueToDelete);
 
     // Lab2
-
     void printCount() const;
     void printPrev() const;
     void printNext() const;

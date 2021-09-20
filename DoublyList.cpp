@@ -375,10 +375,10 @@ void DoublyList::createAList()
     //		Do NOT create a new node.
     //		Max: 5 statements
 
-
-
-
-
+    first->setData(2);
+    first->getNext()->setData(4);
+    last->setData(7);
+    last->getPrev()->setData(6);
 
     /*----------------------------------------------------------------
 	SECTION 9
