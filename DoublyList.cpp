@@ -328,9 +328,12 @@ void DoublyList::createAList()
     //		Max: 6 statements
     // List becomes: 4 7 2 5 6
 
-
-
-
+    last->setNext(first->getNext());
+    first->getNext()->setPrev(last);
+    first->setNext(last);
+    last = last->getPrev();
+    last->setNext(nullptr);
+    first->getNext()->setPrev(first);
 
     /*----------------------------------------------------------------
 	SECTION 7

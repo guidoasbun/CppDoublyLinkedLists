@@ -8,6 +8,7 @@ int main()
     DoublyList myList;
 
     myList.createAList();
+
     cout << "Forward Print: ";
     myList.printForward();
     cout << endl;
