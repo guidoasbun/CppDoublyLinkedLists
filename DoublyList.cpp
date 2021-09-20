@@ -391,11 +391,11 @@ void DoublyList::createAList()
     //		Do NOT create a pointer.
     //		Max: 6 statements
 
-
-
-
-
-
+    first->getNext()->setPrev(new Node(3, first, first->getNext()));
+    first->setPrev(new Node(1, nullptr, first));
+    first->setNext(first->getNext()->getPrev());
+    first = first->getPrev();
+    count += 2;
 
     /*----------------------------------------------------------------
 	SECTION 10
