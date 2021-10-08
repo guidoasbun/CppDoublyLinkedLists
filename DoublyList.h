@@ -38,12 +38,14 @@ public:
     // Default constructor
     DoublyList() : first(nullptr), last(nullptr), count(0) {}
 
-    void insertFront(int newData);
+
 
     void printForward() const;
     void printReverse() const;
     int front() const;
     int back() const;
+
+    void insertFront(int newData);
     void insertBack(int newData);
     void moveToList(DoublyList& toList);
     void deleteElement(int valueToDelete);
@@ -56,6 +58,9 @@ public:
 
     void clearList();
     // Destructor
+
+    void swapFirstLast();
+
     ~DoublyList();
 
 private:

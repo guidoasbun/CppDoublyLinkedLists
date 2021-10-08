@@ -4,92 +4,96 @@
 	<Project>
 		<Option title="DoublyLinkedLists"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug"/>
+				<Option working_dir="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DoublyLinkedLists">
-				<Option output="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/DoublyLinkedLists" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug"/>
+				<Option output="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug/DoublyLinkedLists.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 DoublyLinkedLists"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 DoublyLinkedLists"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DoublyLinkedLists/fast">
-				<Option output="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/DoublyLinkedLists" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug"/>
+				<Option output="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug/DoublyLinkedLists.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 DoublyLinkedLists/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 DoublyLinkedLists/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\guido\CLionProjects\CppDoublyLinkedLists\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/DoublyList.cpp">
+		<Unit filename="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/DoublyList.cpp">
 			<Option target="DoublyLinkedLists"/>
 		</Unit>
-		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/DoublyList.h">
+		<Unit filename="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/DoublyList.h">
 			<Option target="DoublyLinkedLists"/>
 		</Unit>
-		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/main.cpp">
+		<Unit filename="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/main.cpp">
 			<Option target="DoublyLinkedLists"/>
 		</Unit>
-		<Unit filename="/Users/rodrigoasbun/CLionProjects/DoublyLinkedLists/CMakeLists.txt">
+		<Unit filename="C:/Users/guido/CLionProjects/CppDoublyLinkedLists/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

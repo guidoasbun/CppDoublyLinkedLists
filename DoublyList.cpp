@@ -6,26 +6,6 @@
 
 using namespace std;
 
-void DoublyList::insertFront(int newData)
-{
-    if (first == nullptr)
-    {
-        first = new Node(newData, nullptr, nullptr);
-        last = first;
-        // Common error: Forgetting to reset pointer last.
-    }
-    else
-    {
-        first = new Node(newData, nullptr, first);
-        first->getNext()->setPrev(first);
-        // Common error: Forgetting to connect pointer
-        // prev of what is now the second node to the
-        // new first node.
-    }
-
-    ++count;
-}
-
 void DoublyList::printForward() const
 {
     Node* current = first;
@@ -70,6 +50,26 @@ int DoublyList::front() const
 int DoublyList::back() const
 {
     return last->getData();
+}
+
+void DoublyList::insertFront(int newData)
+{
+    if (first == nullptr)
+    {
+        first = new Node(newData, nullptr, nullptr);
+        last = first;
+        // Common error: Forgetting to reset pointer last.
+    }
+    else
+    {
+        first = new Node(newData, nullptr, first);
+        first->getNext()->setPrev(first);
+        // Common error: Forgetting to connect pointer
+        // prev of what is now the second node to the
+        // new first node.
+    }
+
+    ++count;
 }
 
 void DoublyList::insertBack(int newData)
@@ -400,20 +400,11 @@ void DoublyList::createAList()
     /*----------------------------------------------------------------
 	SECTION 10
 	------------------------------------------------------------------*/
+}
 
-    /*
-        Go back to check the following:
+void DoublyList::swapFirstLast()
+{
 
-        Are your statements too long that is necessary to scroll
-        horizontally? If so, break your statements in readable portions.
-
-        You are using shorthand notation:
-            ++count; OR count++; // NOT count = count + 1;
-            count += 2; // NOT count = count + 2;
-
-        Instructions said to create and use ONLY ONE pointer.
-        Go back and check that you did not create more than one pointer.
-    */
 }
 
 DoublyList::~DoublyList()

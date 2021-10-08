@@ -13,24 +13,27 @@ int main()
     myList.printForward();
     cout << endl;
 
-    cout << "Reverse Print: ";
-    myList.printReverse();
-    cout << endl;
+    myList.swapFirstLast();
+    myList.printForward();
 
-    cout << "Count: ";
-    myList.printCount();
-    cout << endl;
-
-    cout << "First Element: " << myList.front() << endl;
-    cout << "Last Element: " << myList.back() << endl;
-
-    cout << "Pointer prev of the first node: ";
-    myList.printPrev();
-    cout << endl;
-
-    cout << "Pointer next of the last node: ";
-    myList.printNext();
-    cout << endl;
+//    cout << "Reverse Print: ";
+//    myList.printReverse();
+//    cout << endl;
+//
+//    cout << "Count: ";
+//    myList.printCount();
+//    cout << endl;
+//
+//    cout << "First Element: " << myList.front() << endl;
+//    cout << "Last Element: " << myList.back() << endl;
+//
+//    cout << "Pointer prev of the first node: ";
+//    myList.printPrev();
+//    cout << endl;
+//
+//    cout << "Pointer next of the last node: ";
+//    myList.printNext();
+//    cout << endl;
 
     myList.clearList();
 
