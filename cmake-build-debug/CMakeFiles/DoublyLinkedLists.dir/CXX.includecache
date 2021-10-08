@@ -6,13 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/guido/CLionProjects/CppDoublyLinkedLists/DoublyList.cpp
-DoublyList.h
-C:/Users/guido/CLionProjects/CppDoublyLinkedLists/DoublyList.h
-
 C:/Users/guido/CLionProjects/CppDoublyLinkedLists/DoublyList.h
 string
 -
+iostream
+-
+
+C:/Users/guido/CLionProjects/CppDoublyLinkedLists/main.cpp
+DoublyList.h
+C:/Users/guido/CLionProjects/CppDoublyLinkedLists/DoublyList.h
 iostream
 -
 

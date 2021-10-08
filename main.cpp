@@ -6,15 +6,33 @@ using namespace std;
 int main()
 {
     DoublyList myList;
+    DoublyList myList2;
 
     myList.createAList();
 
-    cout << "Forward Print: ";
+    myList2.insertFront(4);
+    myList2.insertFront(3);
+    myList2.insertFront(2);
+    myList2.insertFront(1);
+
+    cout << "myList: " << endl;
     myList.printForward();
     cout << endl;
 
-    myList.swapFirstLast();
+    cout << "myList2: " << endl;
+    myList2.printForward();
+    cout << endl;
+
+    myList.swapLast(myList2);
+
+    cout << "myList: " << endl;
     myList.printForward();
+    cout << endl;
+
+    cout << "myList2: " << endl;
+    myList2.printForward();
+    cout << endl;
+
 
 //    cout << "Reverse Print: ";
 //    myList.printReverse();

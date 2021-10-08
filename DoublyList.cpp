@@ -402,9 +402,14 @@ void DoublyList::createAList()
 	------------------------------------------------------------------*/
 }
 
-void DoublyList::swapFirstLast()
+void DoublyList::swapLast(DoublyList &otherList)
 {
-
+    last->getPrev()->setNext(otherList.last);
+    otherList.last->getPrev()->setNext(last);
+    last = otherList.last;
+    otherList.last = last->getPrev()->getNext();
+    last->setPrev(otherList.last->getPrev());
+    otherList.last->setPrev(last->getPrev());
 }
 
 DoublyList::~DoublyList()

@@ -59,7 +59,7 @@ public:
     void clearList();
     // Destructor
 
-    void swapFirstLast();
+void swapLast(DoublyList& otherList);
 
     ~DoublyList();
 
