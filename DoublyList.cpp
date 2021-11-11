@@ -6,6 +6,24 @@
 
 using namespace std;
 
+//Exam 2 practice
+void DoublyList::function3(queue<int> &aQueue) const
+{
+    Node* forWardPtr = first;
+    Node* backwardPtr = last;
+    int middleIdx = count / 2;
+    while (middleIdx > 0)
+    {
+        aQueue.push(forWardPtr->getData());
+        aQueue.push(backwardPtr->getData());
+        forWardPtr = forWardPtr->getNext();
+        backwardPtr = backwardPtr->getPrev();
+        --middleIdx;
+    }
+    if (count % 2 != 0)
+        aQueue.push(forWardPtr->getData());
+}
+
 void DoublyList::printForward() const
 {
     Node* current = first;

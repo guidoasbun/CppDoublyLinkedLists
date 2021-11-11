@@ -3,36 +3,39 @@
 #include <iostream>
 using namespace std;
 
+void printQueue(queue<int> aQueue);
+
 int main()
 {
-    DoublyList myList;
-    DoublyList myList2;
+//    DoublyList myList;
+//    DoublyList myList2;
+//
+//    myList.createAList();
+//
+//    myList2.insertFront(4);
+//    myList2.insertFront(3);
+//    myList2.insertFront(2);
+//    myList2.insertFront(1);
+//
+//    cout << "myList: " << endl;
+//    myList.printForward();
+//    cout << endl;
+//
+//    cout << "myList2: " << endl;
+//    myList2.printForward();
+//    cout << endl;
+//
+//    myList.swapLast(myList2);
+//
+//    cout << "myList: " << endl;
+//    myList.printForward();
+//    cout << endl;
+//
+//    cout << "myList2: " << endl;
+//    myList2.printForward();
+//    cout << endl;
 
-    myList.createAList();
-
-    myList2.insertFront(4);
-    myList2.insertFront(3);
-    myList2.insertFront(2);
-    myList2.insertFront(1);
-
-    cout << "myList: " << endl;
-    myList.printForward();
-    cout << endl;
-
-    cout << "myList2: " << endl;
-    myList2.printForward();
-    cout << endl;
-
-    myList.swapLast(myList2);
-
-    cout << "myList: " << endl;
-    myList.printForward();
-    cout << endl;
-
-    cout << "myList2: " << endl;
-    myList2.printForward();
-    cout << endl;
-
+//********************************************************************************
 
 //    cout << "Reverse Print: ";
 //    myList.printReverse();
@@ -53,12 +56,39 @@ int main()
 //    myList.printNext();
 //    cout << endl;
 
+    DoublyList myList;
+
+    myList.insertBack(3);
+    myList.insertBack(8);
+    myList.insertBack(6);
+    myList.insertBack(4);
+    myList.insertBack(5);
+    myList.insertBack(1);
+    myList.insertBack(7);
+    myList.insertBack(2);
+
+    queue<int> myQueue;
+
+    myList.printForward();
+
+    myList.function3(myQueue);
+
+    cout << endl;
+    printQueue(myQueue);
     myList.clearList();
 
     return 0;
 }
 
-
+void printQueue(queue<int> aQueue)
+{
+    while (!aQueue.empty())
+    {
+        cout << aQueue.front() << " ";
+        aQueue.pop();
+    }
+    cout << endl;
+}
 
 
 

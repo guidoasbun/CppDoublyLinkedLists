@@ -1,5 +1,5 @@
 //
-// Created by Rodrigo Asbun on 9/18/21.
+// Created by Guido Asbun on 9/18/21.
 //
 
 #ifndef DOUBLYLIST_H
@@ -7,6 +7,7 @@
 
 #include <string>
 #include <iostream>
+#include <queue>
 
 class Node
 {
@@ -38,7 +39,8 @@ public:
     // Default constructor
     DoublyList() : first(nullptr), last(nullptr), count(0) {}
 
-
+    // Exam 2 Practice
+    void function3 (std::queue<int>& aQueue) const;
 
     void printForward() const;
     void printReverse() const;
